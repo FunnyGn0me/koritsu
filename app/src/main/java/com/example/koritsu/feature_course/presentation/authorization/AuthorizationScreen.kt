@@ -32,12 +32,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.input.PasswordVisualTransformation
-import androidx.compose.ui.text.style.TextAlign.Companion.Center
 import androidx.compose.ui.unit.dp
 import com.example.koritsu.R
 import com.example.koritsu.ui.theme.dark
-import com.example.koritsu.ui.theme.darkGray
 import com.example.koritsu.ui.theme.green
 import com.example.koritsu.ui.theme.lightGray
 import com.example.koritsu.ui.theme.okEnd
@@ -49,14 +46,14 @@ import com.example.koritsu.ui.theme.white
 @Composable
 fun AuthorizationScreen(
     innerPadding: PaddingValues,
-    onNavigateToCoursesListScreen: (userName: String) -> Unit
+    onNavigateToCoursesListScreen: () -> Unit
 ) {
-    var login: String = ""
 
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(dark)
+            .padding(innerPadding)
             .padding(16.dp),
         verticalArrangement = Arrangement
             .Center
@@ -127,7 +124,7 @@ fun AuthorizationScreen(
         Spacer(modifier = Modifier.height(24.dp))
 
         Button(
-            onClick = { onNavigateToCoursesListScreen(login) },
+            onClick = { onNavigateToCoursesListScreen() },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
                 containerColor = green,

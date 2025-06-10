@@ -7,7 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.koritsu.feature_course.data.remote.responses.Course
 import com.example.koritsu.feature_course.domain.use_case.courses_use_cases.CoursesUseCases
 import com.example.koritsu.feature_course.presentation.courses.CoursesEvent
-import com.example.koritsu.feature_course.presentation.courses_wishlist.CoursesWishListScreenState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

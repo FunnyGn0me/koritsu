@@ -20,7 +20,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -44,7 +43,6 @@ import com.example.koritsu.feature_course.presentation.courses.CoursesScreen
 import com.example.koritsu.feature_course.presentation.courses_wishlist.CoursesWishlistScreen
 import com.example.koritsu.ui.theme.KoritsuTheme
 import com.example.koritsu.ui.theme.darkGray
-import com.example.koritsu.ui.theme.dropShadow
 import com.example.koritsu.ui.theme.green
 import com.example.koritsu.ui.theme.lightGray
 import com.example.koritsu.ui.theme.stroke
