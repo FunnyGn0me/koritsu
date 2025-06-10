@@ -32,6 +32,7 @@ Android-приложение для курсов.
 
 ## <a id="title2"> ScreenCast </a>
 
+https://github.com/user-attachments/assets/e8f431a2-5276-4fd2-b138-7c734ae6283f
 
 ## <a id="title3"> Структура проекта </a>
 
